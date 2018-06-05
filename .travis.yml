@@ -1,5 +1,5 @@
 language: cpp
 before_install:
-- sudo apt install libglu1-mesa-dev
+- sudo apt install libxi-dev libglu1-mesa-dev
 before_script: cd gaps
 script: make
