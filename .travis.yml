@@ -1,7 +1,10 @@
 language: cpp
 before_install:
 - sudo apt install libxi-dev libglu1-mesa-dev
-before_script: cd gaps
+before_script:
+- cd gaps
+- locate libOSMesa.so
+- ld -lOSMesa --verbose
 script:
 - make mesa
 - make
