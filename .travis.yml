@@ -3,8 +3,6 @@ before_install:
 - sudo apt install libxi-dev libglu1-mesa-dev
 before_script:
 - cd gaps
-- sudo apt install mlocate && sudo updatedb
-- locate libOSMesa.so
 - ld -lOSMesa --verbose
 script:
 - make mesa
