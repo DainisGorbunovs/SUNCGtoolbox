@@ -1,6 +1,6 @@
 language: cpp
 before_install:
-- sudo apt install libxi-dev libglu1-mesa-dev
+- sudo apt install libxi-dev libglu1-mesa-dev libosmesa6-dev
 before_script:
 - cd gaps
 - ld -lOSMesa --verbose
